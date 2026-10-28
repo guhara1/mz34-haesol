@@ -1,0 +1,360 @@
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:#2A2630;
+ font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+ font-size:16.5px;line-height:1.8;word-break:keep-all;overflow-wrap:anywhere}
+a{color:#08701B;text-underline-offset:3px}
+img,svg{max-width:100%;height:auto;display:block}
+h1,h2,h3{letter-spacing:-.035em;line-height:1.35}
+.lb{max-width:1200px;margin:0 auto;padding:0 18px}
+.ze{position:absolute;left:-9999px;top:0;background:#0F7B23;color:#fff;padding:10px 16px;z-index:99}
+.ze:focus{left:8px;top:8px}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid #0F7B23;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ── 작업 사진 띠(12차 배관) — 4열 4:3, 모바일 2열 ── */
+.qv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.qv figure{margin:0;background:#fff;border:1px solid #DEE9E0;border-radius:12px;overflow:hidden}
+.qv img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+.qv figcaption{padding:9px 12px 11px;font-size:13.5px;font-weight:700;color:#2A2630;line-height:1.4}
+.qv a{display:block}
+.ya{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.ya figure{margin:0;background:#fff;border:1px solid #DEE9E0;border-radius:12px;overflow:hidden}
+.ya img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+.ya figcaption{padding:10px 14px 12px;font-size:14px;font-weight:700;color:#2A2630}
+@media (max-width:1000px){.qv{grid-template-columns:repeat(2,1fr)}.ya{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.qv{gap:10px}.qv figcaption{font-size:12.5px;padding:7px 9px 9px}.ya{grid-template-columns:1fr}}
+
+/* ── 흰 윗줄 — 네모 표 로고 · 가운데 메뉴 · 오른쪽 작은 글 + 알약 ── */
+.ue{background:#fff;border-bottom:1px solid #DEE9E0;position:sticky;top:0;z-index:50}
+.ue .lb{display:flex;align-items:center;gap:18px;min-height:64px}
+.xy{display:flex;align-items:center;gap:9px;text-decoration:none;color:#2A2630;flex:0 0 auto}
+.xy .xl{width:34px;height:34px;border-radius:9px;background:#0F7B23;padding:6px;color:#fff}
+.xy .xl svg{width:100%;height:100%}
+.xy b{font-size:21px;font-weight:900;letter-spacing:-.05em;color:#2A2630}
+.xy small{display:none}
+.gs{display:flex;gap:4px;margin:0 auto}
+.gs a{padding:9px 16px;font-size:15.5px;font-weight:800;color:#2A2630;text-decoration:none;border-radius:8px;white-space:nowrap}
+.gs a:hover{background:#E6F4E9;color:#08701B}
+.gs a[aria-current]{color:#08701B;box-shadow:inset 0 -3px 0 #33C1AC}
+.bb{display:flex;align-items:center;gap:12px;font-size:12.5px;flex:0 0 auto}
+.bb a{color:#5E5866;text-decoration:none;font-weight:600;min-height:32px;display:inline-flex;align-items:center}
+.bb a:hover{color:#08701B}
+.bb .pp{background:#E6F4E9;color:#08701B;border-radius:14px;padding:0 12px;font-weight:800}
+.yp,.hb{display:none}
+
+/* ── 전폭 그라데이션 히어로 띠 — 윗줄 그림 무늬 · 큰 흰 h1 · 요약 · 상호 · 점 둘 ── */
+.ci{background:linear-gradient(135deg,#08701B,#0F7B23 70%,#08701B);color:#fff;position:relative;overflow:hidden}
+.ci .lb{position:relative;z-index:1;padding-top:16px;padding-bottom:64px;text-align:center}
+.bh{display:flex;justify-content:center;gap:22px;margin:0 0 14px;opacity:.55}
+.bh svg{width:30px;height:30px}
+.bh svg:nth-child(odd){transform:translateY(8px)}
+.vf{margin:0 0 6px;font-size:13px;font-weight:800;letter-spacing:.14em;color:#fff;opacity:.9}
+.vf a{color:#fff;text-decoration:underline;text-decoration-color:#33C1AC;text-underline-offset:4px}
+.gp{font-size:38px;margin:0 0 10px;color:#fff;font-weight:900;letter-spacing:-.045em}
+.gp em{font-style:normal;color:#fff;border-bottom:4px solid #33C1AC}
+.zh{margin:0 auto 14px;font-size:16px;color:#fff;opacity:.94;max-width:56ch}
+.zh a{color:#fff;font-weight:800;text-decoration:underline;text-decoration-color:#33C1AC;text-underline-offset:4px}
+.kb{display:flex;justify-content:center;gap:9px;margin:0 0 16px;flex-wrap:wrap}
+.zu{display:inline-flex;align-items:center;gap:7px;background:#fff;color:#08701B;font-weight:800;padding:0 20px;min-height:46px;
+ border-radius:23px;font-size:14.5px;text-decoration:none;box-shadow:inset 0 -3px 0 #33C1AC}
+.zu .ql{color:#08701B}
+.zu:hover{background:#EEF9F7}
+.zu.ev{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.55);box-shadow:none}
+.zu.ev:hover{background:rgba(255,255,255,.26)}
+.fi{margin:0;font-size:13.5px;color:#fff;opacity:.85;font-weight:700}
+.do{display:flex;justify-content:center;gap:7px;list-style:none;margin:10px 0 0;padding:0}
+.do li{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.45)}
+.do li:first-child{background:#fff}
+.ky,.df{display:none}
+
+/* ── 세 칸 찾기 카드 — 히어로 아래턱에 걸쳐 뜬다 ── */
+.yx{position:relative;z-index:2;margin-top:-46px}
+.bs{background:#fff;border-radius:14px;box-shadow:0 10px 30px rgba(42,38,48,.14);display:grid;
+ grid-template-columns:1fr 1fr 1fr auto;align-items:center;padding:8px 10px 8px 0}
+.bs .vz{padding:8px 22px;border-right:1px solid #DEE9E0;min-width:0}
+.bs .vz:nth-child(3){border-right:0}
+.bs label,.bs .qj{display:block;font-size:13px;font-weight:800;color:#2A2630;margin:0 0 2px}
+.bs select{width:100%;border:0;background:#fff;font-size:15px;color:#2A2630;font-family:inherit;padding:4px 0;min-height:36px}
+.bs select:disabled{color:#5E5866}
+.bs .vz a{display:block;font-size:14px;color:#5E5866;text-decoration:none;font-weight:600;min-height:36px;line-height:36px;
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bs .vz a:hover{color:#08701B}
+.bs .jv{width:54px;height:54px;border:0;border-radius:50%;background:#0F7B23;color:#fff;font-weight:800;font-size:14px;
+ cursor:pointer;font-family:inherit;margin-left:10px}
+.bs .jv:disabled{background:#DEE9E0;color:#08701B;cursor:default}
+.bs .jv:hover:not(:disabled){background:#08701B}
+.ni{padding:18px 0 0}
+.ni .yx{margin-top:0}
+.ni .bs{box-shadow:none;border:1px solid #DEE9E0}
+
+/* ── 구역 — 굵은 h2 왼쪽 · 오른쪽 「전체 ›」 ── */
+section{padding:34px 0 6px;position:relative;overflow:hidden}
+section>.lb{position:relative;z-index:1}
+.du{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:16px}
+.du h2{font-size:22px;margin:0;font-weight:900}
+.du .um{display:none}
+.du p{margin:3px 0 0;color:#5E5866;font-size:14px;line-height:1.6}
+.gd{color:#08701B;text-decoration:none;font-weight:800;font-size:13.5px;white-space:nowrap;flex:0 0 auto;min-height:36px;
+ display:inline-flex;align-items:center}
+.gd:hover{text-decoration:underline}
+.ix.bf,.ix.dd,.ix.ji,.ix.oe,.ix.tx{background:transparent}
+
+/* ── 3열 업소 카드 — 무늬 덮개 · 메타 · 제목 · 주소 · 태그 · 요금 · 바닥 한 줄 ── */
+.bd{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.qa{background:#fff;border:1px solid #DEE9E0;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;
+ text-decoration:none;color:#2A2630;box-shadow:0 2px 10px rgba(42,38,48,.05)}
+.qa:hover{border-color:#0F7B23;box-shadow:0 8px 22px rgba(42,38,48,.12)}
+.jh{display:block;position:relative}
+.jh .vd{width:100%;height:auto;aspect-ratio:16/10}
+.de{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;padding:12px 16px 0;font-size:12.5px;color:#5E5866;font-weight:700}
+.de .ql{width:14px;height:14px;color:#08701B;display:inline-block;vertical-align:-2px;margin-right:3px}
+.de .mt{color:#08701B;font-weight:900;margin-right:2px}
+.uz{display:block;padding:6px 16px 0;font-size:17px;font-weight:900;line-height:1.4}
+.dw{display:block;padding:3px 16px 0;font-size:13.5px;color:#5E5866}
+.jr{display:block;padding:4px 16px 0;font-size:12.5px;color:#0B6E5F;font-weight:700}
+.mx{display:block;padding:8px 16px 12px;text-align:right;font-size:17px;font-weight:900;color:#08701B;letter-spacing:-.02em}
+.mx small{font-size:12px;color:#5E5866;font-weight:700;margin-right:6px}
+.io{display:block;background:#E6F4E9;padding:10px 16px;font-size:13px;color:#2A2630;line-height:1.5;margin-top:auto;
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ── 「한줄소개」 두 칸 목록(갈래) — [이름] 한 줄 … 요금 알약 ── */
+.sr{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;border-top:2px solid #2A2630}
+.bt{display:flex;align-items:center;gap:10px;padding:12px 4px;border-bottom:1px solid #DEE9E0;text-decoration:none;color:#2A2630;min-height:54px}
+.bt:hover{background:#FAFCFA}
+.bt[aria-current]{background:#EEF9F7}
+.bt .vc{flex:0 0 40px;width:40px;height:40px;border-radius:10px;overflow:hidden;background:#E6F4E9}
+.bt .vc svg{width:100%;height:100%}
+.bt em{flex:0 0 auto;font-style:normal;font-weight:900;font-size:14.5px}
+.bt em::before{content:"[";color:#5E5866;font-weight:600}
+.bt em::after{content:"]";color:#5E5866;font-weight:600}
+.bt .ei{flex:1;min-width:0;font-size:14px;color:#5E5866;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bt b{flex:0 0 auto;background:#E6F4E9;color:#08701B;border-radius:12px;padding:3px 11px;font-size:12.5px;font-weight:800}
+
+/* ── 아이콘 선택지 줄(축) — 업소 쪽의 8칸 ── */
+.rk{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;background:#fff;border:1px solid #DEE9E0;border-radius:12px;padding:18px 12px}
+.us{text-decoration:none;color:#2A2630;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px;padding:6px 4px;border-radius:10px}
+.us:hover{background:#FAFCFA}
+.us[aria-current]{background:#EEF9F7}
+.us .by{width:46px;height:46px;border-radius:50%;background:#E6F4E9;display:inline-flex;align-items:center;justify-content:center;color:#08701B}
+.us b{display:block;font-size:14px;line-height:1.3;color:#08701B}
+.us small{display:block;font-size:12px;color:#5E5866;line-height:1.4}
+.us .iz{display:none}
+
+/* ── 세 칸(안내 문서 · 갈래 그림 · 지역 칩) — 머리띠 카드 ── */
+.nl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.oj{background:#fff;border:1px solid #DEE9E0;border-radius:12px;overflow:hidden}
+.oj h2{margin:0;background:#E6F4E9;color:#08701B;font-size:15px;font-weight:900;padding:11px 16px}
+.oj>div,.oj>ul{padding:12px 16px 16px}
+.kl{list-style:none;margin:0;font-size:14px}
+.kl li{display:flex;align-items:center;gap:9px;padding:7px 0;border-bottom:1px solid #DEE9E0}
+.kl li:last-child{border:0}
+.kl em{flex:0 0 auto;font-style:normal;font-size:11.5px;font-weight:800;color:#08701B;border:1px solid #DEE9E0;border-radius:4px;padding:1px 6px}
+.kl a{flex:1;min-width:0;color:#2A2630;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.kl a:hover{color:#08701B}
+.ox{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ox a{text-align:center;text-decoration:none;color:#2A2630}
+.ox .vc{display:block;width:52px;height:52px;margin:0 auto 4px;border-radius:50%;overflow:hidden;background:#E6F4E9}
+.ox .vc svg{width:100%;height:100%}
+.ox a:hover .vc{box-shadow:0 0 0 2px #0F7B23}
+.ox i{font-style:normal;font-size:12.5px;color:#5E5866;font-weight:700;display:block;line-height:1.3}
+.ws{display:flex;flex-wrap:wrap;gap:6px}
+.ws a{padding:6px 12px;border-radius:14px;font-size:13.5px;color:#2A2630;background:#FAFCFA;border:1px solid #DEE9E0;text-decoration:none;font-weight:600}
+.ws a:hover{border-color:#0F7B23;color:#08701B}
+.ws a.fw{background:#0F7B23;color:#fff;border-color:#0F7B23}
+.ws a[aria-current="true"]{box-shadow:inset 0 0 0 2px rgba(255,255,255,.55);text-decoration:underline;text-underline-offset:3px}
+.ny{margin:10px 0 0;font-size:12.5px;color:#5E5866}
+
+/* ── #태그 알약(지역·주제·자리) ── */
+.hj{margin:-8px 0 12px;font-size:13.5px;color:#5E5866}
+.rg{display:flex;flex-wrap:wrap;gap:8px}
+.rg a{display:inline-flex;align-items:center;gap:2px;background:#E6F4E9;border-radius:16px;padding:0 13px;min-height:36px;
+ text-decoration:none;color:#08701B;font-size:13.5px;font-weight:700}
+.rg a::before{content:"#";font-weight:900;opacity:.6}
+.rg a:hover{background:#0F7B23;color:#fff}
+.rg i{display:none}
+
+/* ── 글 덩이 — 「업체소개」 라벨 + 글 ── */
+.jn{background:#fff;border:1px solid #DEE9E0;border-radius:12px;padding:22px 26px 24px;position:relative}
+.ia{display:inline-flex;align-items:center;gap:8px;margin-bottom:10px}
+.ia .wh{width:30px;height:30px}
+.ia span{display:inline-flex;background:#0F7B23;color:#fff;border-radius:4px;padding:2px 10px;font-size:12.5px;font-weight:800}
+.uh{display:inline-flex}
+.jo{max-width:74ch}
+.jo h2{font-size:18px;margin:0 0 10px;padding-bottom:8px;border-bottom:2px solid #E6F4E9}
+.jo p{margin:0 0 12px;font-size:15.5px;line-height:1.85}
+.jo p:last-child{margin-bottom:0}
+.jo strong{font-weight:800;color:#08701B}
+.jo a{color:#08701B;font-weight:700}
+.sz{position:absolute;opacity:.18;pointer-events:none;z-index:0}
+.sz.sp,.sz.qj{display:none}
+.sz.kd{right:24px;top:40px}
+.sz.py{right:36px;bottom:20px}
+@media (max-width:1180px){.sz{display:none}}
+
+/* ── 요금 — 머리띠 + 줄(이름·작은 글 / 값) + 「꼭 확인해 주세요」 ── */
+.qk{background:#fff;border:1px solid #DEE9E0;border-radius:12px;overflow:hidden}
+.nm{background:#E6F4E9;color:#08701B;font-weight:900;font-size:15px;padding:11px 18px;text-align:center}
+.dq{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 18px;border-top:1px solid #DEE9E0}
+.dq.wn{background:#EEF9F7}
+.au{font-weight:800;font-size:16px;min-width:0}
+.au small{display:block;font-weight:600;font-size:12.5px;color:#5E5866;line-height:1.5}
+.au .js{display:none}
+.nw{flex:0 0 auto;color:#5E5866;font-weight:700;font-size:13.5px}
+.sm{flex:0 0 auto;font-size:19px;font-weight:900;color:#08701B;letter-spacing:-.02em}
+.bu{margin-top:14px;border:1px solid #DEE9E0;border-radius:10px;padding:14px 18px;background:#FAFCFA}
+.bu b{display:block;font-size:14px;margin-bottom:4px;color:#08701B}
+.bu b::before{content:"!";display:inline-flex;width:18px;height:18px;border-radius:50%;background:#0F7B23;color:#fff;
+ align-items:center;justify-content:center;font-size:12px;margin-right:7px}
+.bu p{margin:0;font-size:13.5px;color:#5E5866;line-height:1.7}
+.oy{color:#5E5866;font-size:13.5px;margin-top:10px}
+table.ca{border-collapse:collapse;width:100%;margin:6px 0 14px;font-size:15.5px}
+table.ca th,table.ca td{border:1px solid #DEE9E0;padding:10px 12px;text-align:left}
+table.ca th{background:#E6F4E9;font-weight:800;width:9em;white-space:nowrap}
+table.ca td.bf{font-weight:800;color:#08701B;text-align:right;white-space:nowrap}
+
+/* ── 문답 — ▶ 막대 줄 ── */
+.ix.ah .du{justify-content:center;text-align:center}
+.ix.ah .du h2{color:#08701B}
+.ix.ah .gd{display:none}
+.hm{margin:0;display:flex;flex-direction:column;gap:8px}
+.tq{background:#fff;border:1px solid #DEE9E0;border-radius:8px;padding:0 16px}
+.tq dt{display:flex;align-items:center;gap:10px;padding:12px 0;margin:0}
+.tq dt::before{content:"▶";color:#0F7B23;font-size:11px;flex:0 0 auto}
+.tq h3{margin:0;font-size:15.5px;font-weight:800;line-height:1.45}
+.tq dd{margin:0;padding:10px 0 13px 21px;color:#5E5866;font-size:14.5px;line-height:1.75;border-top:1px dashed #DEE9E0}
+
+/* ── 전화 띠 — 연한 제목 띠(‹ 제목 · 알약) ── */
+.xf{padding:26px 0 6px}
+.ru{background:#E6F4E9;border-radius:10px;padding:16px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;position:relative;overflow:hidden}
+.ru .um{display:none}
+.ru .jm{flex:0 0 auto;width:14px;height:14px;border-left:3px solid #08701B;border-bottom:3px solid #08701B;transform:rotate(45deg);margin-left:4px}
+.ru h2{font-size:18px;margin:0;color:#08701B}
+.ru p{margin:2px 0 0;color:#2A2630;font-size:14px}
+.ru .dc{margin-left:auto;display:inline-flex;align-items:center;gap:7px;background:#0F7B23;color:#fff;border-radius:23px;padding:0 20px;
+ min-height:46px;text-decoration:none;font-weight:800;font-size:15px;flex:0 0 auto}
+.ru .dc .ql{color:#fff}
+.ru .dc:hover{background:#08701B}
+.ru .pl{position:absolute;opacity:.12;right:30%;top:-16px}
+.os{display:flex;justify-content:center;margin:14px 0 0}
+.os a{display:inline-flex;align-items:center;min-height:42px;padding:0 22px;border-radius:21px;background:#08701B;text-decoration:none;
+ color:#fff;font-weight:800;font-size:14px}
+.os a:hover{background:#0F7B23}
+.os a::after{content:" →";margin-left:4px}
+
+/* ── 빵부스러기 ── */
+.xi{background:#fff;font-size:12.5px;color:#5E5866}
+.xi .lb{padding:10px 18px 0;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.xi a{color:#5E5866;text-decoration:none;font-weight:600}
+.xi a:hover{color:#08701B}
+.xi i{font-style:normal;margin:0 5px;color:#DEE9E0}
+
+/* ── 꼬리 — 얇은 링크 줄 · 회색 칸(고객센터·큰 전화·안내·큰 표) ── */
+.ea{margin-top:40px}
+.ej{border-top:1px solid #DEE9E0;border-bottom:1px solid #DEE9E0;background:#fff}
+.ej .lb{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 18px;padding-top:10px;padding-bottom:10px;font-size:13px}
+.ej a{color:#5E5866;text-decoration:none;font-weight:600;min-height:28px;display:inline-flex;align-items:center}
+.ej a:hover{color:#08701B}
+.ju{background:#FAFCFA;border-top:1px solid #DEE9E0}
+.ju .lb{padding-top:30px;padding-bottom:28px;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr auto;gap:26px;align-items:start}
+.cw{font-size:13.5px;color:#5E5866;margin:0 0 2px;font-weight:700}
+.og{display:inline-flex;align-items:center;gap:8px;color:#08701B;font-weight:900;text-decoration:none;font-size:24px;letter-spacing:-.02em;min-height:40px}
+.og .ql{width:20px;height:20px}
+.gw{margin:2px 0 10px;font-size:13px;color:#5E5866}
+.sq{margin:0;font-size:12.5px;line-height:1.7;color:#5E5866}
+.sq p{margin:0 0 4px}
+.ea nav h4{margin:0 0 8px;font-size:13.5px;color:#2A2630;font-weight:900}
+.ea nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.ea nav li a{color:#5E5866;text-decoration:none;font-size:13px;line-height:1.7}
+.ea nav li a:hover{color:#08701B;text-decoration:underline}
+.yi{display:flex;align-items:center;gap:10px;color:#2A2630;text-decoration:none;align-self:end}
+.yi .xl{width:52px;height:52px;border-radius:14px;background:#0F7B23;color:#fff;padding:10px}
+.yi .xl svg{width:100%;height:100%}
+.yi b{font-size:26px;font-weight:900;letter-spacing:-.05em}
+.fh{background:#FAFCFA}
+.fh .lb{padding-bottom:18px;font-size:12.5px;color:#5E5866}
+.gx{display:flex;flex-wrap:wrap;gap:2px 12px;margin:0 0 8px}
+.gx a{color:#5E5866;text-decoration:none;font-size:12px;min-height:26px;display:inline-flex;align-items:center}
+.gx a:hover{color:#08701B;text-decoration:underline}
+.jb{display:none}
+
+@media (max-width:1000px){
+ .gs a{padding:8px 11px;font-size:14.5px}
+ .bd{grid-template-columns:repeat(2,1fr)}
+ .rk{grid-template-columns:repeat(4,1fr)}
+ .nl{grid-template-columns:1fr}
+ .ju .lb{grid-template-columns:1fr 1fr}
+ .yi{grid-column:1/-1;align-self:start}
+ .gp{font-size:30px}
+}
+@media (max-width:760px){
+ body{font-size:16px;padding-bottom:72px}
+ .ue .lb{min-height:0;padding-top:8px;padding-bottom:8px;gap:8px;flex-wrap:wrap}
+ .xy b{font-size:18px}
+ .xy .xl{width:30px;height:30px;padding:5px}
+ .gs,.bb{display:none}
+ .yp{display:flex;flex:1;align-items:center;gap:8px;min-height:40px;padding:0 14px;border-radius:20px;background:#FAFCFA;border:1px solid #DEE9E0;
+  text-decoration:none;color:#5E5866;font-size:13.5px;font-weight:700;min-width:0}
+ .yp span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .yp .ql{margin-left:auto;flex:0 0 auto;color:#08701B}
+ .hb{display:grid;grid-template-columns:1fr 1fr 1fr;background:#fff;border-bottom:1px solid #DEE9E0}
+ .hb a{padding:8px 14px;border-right:1px solid #DEE9E0;text-decoration:none;color:#2A2630;min-height:50px}
+ .hb a:last-child{border-right:0}
+ .hb b{display:block;font-size:13px;font-weight:800}
+ .hb small{display:block;font-size:12px;color:#5E5866}
+ .ci .lb{padding-top:12px;padding-bottom:54px}
+ .bh{gap:12px;margin-bottom:10px}
+ .bh svg{width:22px;height:22px}
+ .gp{font-size:24px}
+ .zh{font-size:14px}
+ .zu{min-height:42px;padding:0 15px;font-size:13.5px}
+ .yx{margin-top:-30px}
+ .bs{grid-template-columns:1fr;padding:6px 12px 12px;gap:0}
+ .bs .vz{border-right:0;border-bottom:1px solid #DEE9E0;padding:8px 4px}
+ .bs .vz:nth-child(3){border-bottom:0}
+ .bs .jv{width:100%;height:46px;border-radius:23px;margin:6px 0 0}
+ section{padding:24px 0 4px}
+ .du{flex-direction:column;align-items:flex-start;gap:4px}
+ .du h2{font-size:19px}
+ .gd{min-height:30px}
+ .bd{grid-template-columns:repeat(2,1fr);gap:10px}
+ .de{padding:9px 11px 0;gap:3px 8px;font-size:11.5px}
+ .uz{padding:4px 11px 0;font-size:14.5px}
+ .dw{padding:2px 11px 0;font-size:12.5px}
+ .jr{display:none}
+ .mx{padding:6px 11px 10px;font-size:15px}
+ .io{padding:8px 11px;font-size:12px}
+ .sr{grid-template-columns:1fr}
+ .bt{flex-wrap:wrap;gap:6px 10px}
+ .bt .ei{flex:1 1 100%;order:9;font-size:12.5px;padding-left:50px;margin-top:-6px;white-space:normal}
+ .rk{grid-template-columns:repeat(4,1fr);gap:6px;padding:12px 6px}
+ .us b{font-size:12.5px}
+ .us small{display:none}
+ .rg a{min-height:34px;font-size:13px}
+ .jn{padding:18px 16px 20px}
+ .jo h2{font-size:17px}
+ .dq{padding:11px 14px}
+ .sm{font-size:17px}
+ .ru{padding:14px 16px}
+ .ru .dc{margin-left:0;width:100%;justify-content:center}
+ .ju .lb{grid-template-columns:1fr;gap:16px}
+ .yi{grid-column:auto}
+ /* 바닥 고정 탭 바 — 가운데가 ★사장님 지시 전화연결 단추(로드샵 모바일) */
+ .jb{display:grid;grid-template-columns:.85fr .85fr 3.7fr .85fr .85fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;
+  border-top:1px solid #DEE9E0;box-shadow:0 -4px 18px rgba(42,38,48,.12);padding:6px 6px 8px;gap:4px;align-items:stretch}
+ .jb a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:#5E5866;
+  font-size:10px;font-weight:700;min-height:50px;border-radius:10px;min-width:0;padding:0 2px}
+ .jb a .ql{width:19px;height:19px;color:#5E5866}
+ .jb a.wj{background:#0F7B23;color:#fff;font-size:10.5px;font-weight:800;flex-direction:row;gap:6px;border-radius:14px;margin-top:-16px;padding:0 6px;
+  box-shadow:0 6px 16px rgba(42,38,48,.22)}
+ .jb a.wj .ql{color:#fff;width:18px;height:18px;flex:0 0 18px}
+ .jb a.wj span{display:flex;flex-direction:column;line-height:1.2;min-width:0;white-space:nowrap}
+ .jb a.wj .li{font-weight:900;color:#fff;font-size:13px;letter-spacing:0}
+}
+
+.ix{padding:52px 0}
+.jo{max-width:65ch}
+.jo strong{box-shadow:inset 0 -7px 0 #EEF9F0}
+.jo p{line-height:1.86;margin-bottom:1.18em}
+.tw{border-radius:9px}
